@@ -1,0 +1,43 @@
+7767517
+41 41
+Input            data             0 1 data 0=416 1=416 2=3
+Convolution      layer1-conv      1 1 data layer1-conv 0=16 1=3 2=1 3=1 4=1 5=0 6=432
+BatchNorm        layer1-bn        1 1 layer1-conv layer1-conv_layer1-bn 0=16
+Scale            layer1-scale     1 1 layer1-conv_layer1-bn layer1-conv_layer1-scale 0=16 1=1
+ReLU             layer1-act       1 1 layer1-conv_layer1-scale layer1-conv_layer1-act 0=0.100000
+Pooling          layer2-maxpool   1 1 layer1-conv_layer1-act layer2-maxpool 0=0 1=2 2=2 3=0 4=0
+Convolution      layer3-conv      1 1 layer2-maxpool layer3-conv 0=32 1=3 2=1 3=1 4=1 5=0 6=4608
+BatchNorm        layer3-bn        1 1 layer3-conv layer3-conv_layer3-bn 0=32
+Scale            layer3-scale     1 1 layer3-conv_layer3-bn layer3-conv_layer3-scale 0=32 1=1
+ReLU             layer3-act       1 1 layer3-conv_layer3-scale layer3-conv_layer3-act 0=0.100000
+Pooling          layer4-maxpool   1 1 layer3-conv_layer3-act layer4-maxpool 0=0 1=2 2=2 3=0 4=0
+Convolution      layer5-conv      1 1 layer4-maxpool layer5-conv 0=64 1=3 2=1 3=1 4=1 5=0 6=18432
+BatchNorm        layer5-bn        1 1 layer5-conv layer5-conv_layer5-bn 0=64
+Scale            layer5-scale     1 1 layer5-conv_layer5-bn layer5-conv_layer5-scale 0=64 1=1
+ReLU             layer5-act       1 1 layer5-conv_layer5-scale layer5-conv_layer5-act 0=0.100000
+Pooling          layer6-maxpool   1 1 layer5-conv_layer5-act layer6-maxpool 0=0 1=2 2=2 3=0 4=0
+Convolution      layer7-conv      1 1 layer6-maxpool layer7-conv 0=128 1=3 2=1 3=1 4=1 5=0 6=73728
+BatchNorm        layer7-bn        1 1 layer7-conv layer7-conv_layer7-bn 0=128
+Scale            layer7-scale     1 1 layer7-conv_layer7-bn layer7-conv_layer7-scale 0=128 1=1
+ReLU             layer7-act       1 1 layer7-conv_layer7-scale layer7-conv_layer7-act 0=0.100000
+Pooling          layer8-maxpool   1 1 layer7-conv_layer7-act layer8-maxpool 0=0 1=2 2=2 3=0 4=0
+Convolution      layer9-conv      1 1 layer8-maxpool layer9-conv 0=256 1=3 2=1 3=1 4=1 5=0 6=294912
+BatchNorm        layer9-bn        1 1 layer9-conv layer9-conv_layer9-bn 0=256
+Scale            layer9-scale     1 1 layer9-conv_layer9-bn layer9-conv_layer9-scale 0=256 1=1
+ReLU             layer9-act       1 1 layer9-conv_layer9-scale layer9-conv_layer9-act 0=0.100000
+Pooling          layer10-maxpool  1 1 layer9-conv_layer9-act layer10-maxpool 0=0 1=2 2=2 3=0 4=0
+Convolution      layer11-conv     1 1 layer10-maxpool layer11-conv 0=512 1=3 2=1 3=1 4=1 5=0 6=1179648
+BatchNorm        layer11-bn       1 1 layer11-conv layer11-conv_layer11-bn 0=512
+Scale            layer11-scale    1 1 layer11-conv_layer11-bn layer11-conv_layer11-scale 0=512 1=1
+ReLU             layer11-act      1 1 layer11-conv_layer11-scale layer11-conv_layer11-act 0=0.100000
+Pooling          layer12-maxpool  1 1 layer11-conv_layer11-act layer12-maxpool 0=0 1=2 2=1 3=1 4=0
+Convolution      layer13-conv     1 1 layer12-maxpool layer13-conv 0=1024 1=3 2=1 3=1 4=1 5=0 6=4718592
+BatchNorm        layer13-bn       1 1 layer13-conv layer13-conv_layer13-bn 0=1024
+Scale            layer13-scale    1 1 layer13-conv_layer13-bn layer13-conv_layer13-scale 0=1024 1=1
+ReLU             layer13-act      1 1 layer13-conv_layer13-scale layer13-conv_layer13-act 0=0.100000
+Convolution      layer14-conv     1 1 layer13-conv_layer13-act layer14-conv 0=512 1=3 2=1 3=1 4=1 5=0 6=4718592
+BatchNorm        layer14-bn       1 1 layer14-conv layer14-conv_layer14-bn 0=512
+Scale            layer14-scale    1 1 layer14-conv_layer14-bn layer14-conv_layer14-scale 0=512 1=1
+ReLU             layer14-act      1 1 layer14-conv_layer14-scale layer14-conv_layer14-act 0=0.100000
+Convolution      layer15-conv     1 1 layer14-conv_layer14-act layer15-conv 0=40 1=1 2=1 3=1 4=0 5=1 6=20480
+YoloDetectionOutput detection_out    1 1 layer15-conv detection_out 0=3 1=5 2=0.300000 3=0.450000 -23304=10,1.080000,1.190000,3.420000,4.410000,6.630000,11.380000,9.420000,5.110000,16.620001,10.520000
