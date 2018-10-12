@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+d5f27cf163c25e91aa734417cdee0449 tools/caffe/caffe.pb.cc
+1bbe024742e858186aa3882e0cca6215 tools/onnx/onnx.pb.cc

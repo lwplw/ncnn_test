@@ -1,0 +1,1 @@
+/usr/bin/c++    -fopenmp -O3 -DNDEBUG   CMakeFiles/mobilenetssd.dir/mobilenetssd.cpp.o  -o mobilenetssd -rdynamic ../src/libncnn.a /usr/local/lib/libopencv_highgui.so.3.1.0 /usr/local/lib/libopencv_imgcodecs.so.3.1.0 /usr/local/lib/libopencv_imgproc.so.3.1.0 /usr/local/lib/libopencv_core.so.3.1.0 -Wl,-rpath,/usr/local/lib -Wl,-rpath-link,/usr/local/lib 
