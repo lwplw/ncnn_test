@@ -12,46 +12,6 @@ ncnn 是一个为手机端极致优化的高性能神经网络前向计算框架
 
 ---
 
-### HowTo
-
-[how to build ncnn library](https://github.com/Tencent/ncnn/wiki/how-to-build)
-
-[how to use ncnn with alexnet](https://github.com/Tencent/ncnn/wiki/how-to-use-ncnn-with-alexnet)
-
-[ncnn 组件使用指北 alexnet](https://github.com/Tencent/ncnn/wiki/ncnn-%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8C%97-alexnet)
-
-[ncnn low-level operation api](https://github.com/Tencent/ncnn/wiki/low-level-operation-api)
-
-[ncnn param and model file spec](https://github.com/Tencent/ncnn/wiki/param-and-model-file-structure)
-
-[ncnn operation param weight table](https://github.com/Tencent/ncnn/wiki/operation-param-weight-table)
-
-[how to implement custom layer step by step](https://github.com/Tencent/ncnn/wiki/how-to-implement-custom-layer-step-by-step)
-
----
-
-### FAQ
-
-[ncnn throw error](https://github.com/Tencent/ncnn/wiki/FAQ-ncnn-throw-error)
-
-[ncnn produce wrong result](https://github.com/Tencent/ncnn/wiki/FAQ-ncnn-produce-wrong-result)
-
----
-
-### Features
-
-* Supports convolutional neural networks, supports multiple input and multi-branch structure, can calculate part of the branch
-* No third-party library dependencies, does not rely on BLAS / NNPACK or any other computing framework
-* Pure C ++ implementation, cross-platform, supports android, ios and so on
-* ARM NEON assembly level of careful optimization, calculation speed is extremely high
-* Sophisticated memory management and data structure design, very low memory footprint
-* Supports multi-core parallel computing acceleration, ARM big.LITTLE cpu scheduling optimization
-* The overall library size is less than 500K, and can be easily reduced to less than 300K
-* Extensible model design, supports 8bit quantization and half-precision floating point storage, can import caffe/pytorch/mxnet/onnx models
-* Support direct memory zero copy reference load network model
-* Can be registered with custom layer implementation and extended
-* Well, it is strong, not afraid of being stuffed with 卷   QvQ
-
 ### 功能概述
 
 * 支持卷积神经网络，支持多输入和多分支结构，可计算部分分支
@@ -68,15 +28,7 @@ ncnn 是一个为手机端极致优化的高性能神经网络前向计算框架
 
 ---
 
-### Example project
-
-https://github.com/Tencent/ncnn/tree/master/examples/squeezencnn
-
-### 技术交流QQ群：637093648(已满qaq) 853969140  答案：卷卷卷卷卷
-
----
-
-### License
-
-BSD 3 Clause
-
+### Example
+* https://blog.csdn.net/lwplwf/article/details/83016219
+* https://blog.csdn.net/lwplwf/article/details/82983904
+* https://blog.csdn.net/lwplwf/article/details/82842586
